@@ -1,0 +1,10 @@
+.layout{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.layout main {
+    width: 75%;
+}

@@ -1,18 +1,23 @@
 import NewJournalForm from "../components/journals/NewJournalForm"
+import { useRouter } from 'next/router'
 
 function CreateJournal(props) {
 
+    const router = useRouter()
+    
     const onAddJournal = (JournalData) => {
         console.log(JournalData)
+        router.push({
+            pathname: '/journals',
+            query: JournalData,
+        }, '/journals')
     }
 
     return (
-        <>
-            <NewJournalForm
-                Date={props.fullDate}
-                onAddJournal={onAddJournal}
-            />
-        </>
+        <NewJournalForm
+            Date={props.fullDate}
+            onAddJournal={onAddJournal}
+        />
     )
 }
 

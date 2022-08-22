@@ -1,17 +1,20 @@
-import { useRouter } from 'next/router'
 import JournalsList from '../components/journals/JournalsList'
+import { useSelector } from 'react-redux'
 
-function Journals() {
+function Journals(props) {
 
-    const router = useRouter()
-    console.log(router.query)
-    const data = router.query
+    const list = useSelector((state) => state.journalReducer.list)
 
-    return (
-        <>
-            <JournalsList journalsData={data} />
-        </>
-    )
+    if (list.length)
+        return (
+            <>
+                <JournalsList journalsData={list} />
+            </>
+        )
+    else
+        return (
+            <h2 className="noData">No Journals created yet.</h2>
+        )
 }
 
 export default Journals

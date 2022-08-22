@@ -10,6 +10,7 @@
 
 .logo {
     font-size: 2rem;
+    cursor: pointer;
     color: white;
     font-weight: bold;
 }

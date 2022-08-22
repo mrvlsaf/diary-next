@@ -1,5 +1,5 @@
 .item {
-    margin: 1rem 0;
+    margin-bottom: 3em;
 }
 
 .form {
@@ -34,3 +34,4 @@
     height: 150px;
     overflow-y: scroll;
 }
+

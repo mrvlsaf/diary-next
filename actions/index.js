@@ -4,11 +4,3 @@ export const addJournal = (data) => {
         payload: data
     }
 }
-
-// {
-//     data
-//     // id: new Date().getTime().toString(),
-//     // date: data.date,
-//     // title: data.title,
-//     // description: data.description
-// }

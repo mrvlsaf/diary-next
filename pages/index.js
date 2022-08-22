@@ -1,7 +1,6 @@
 import NewJournalForm from "../components/journals/NewJournalForm"
 
 function CreateJournal(props) {
-
     return (
         <NewJournalForm
             Date={props.fullDate}

@@ -1,5 +1,6 @@
 import JournalsList from '../components/journals/JournalsList'
 import { useSelector } from 'react-redux'
+import SearchBar from '../components/ui/SearchBar'
 
 function Journals(props) {
 
@@ -8,6 +9,7 @@ function Journals(props) {
     if (list.length)
         return (
             <>
+                <SearchBar />
                 <JournalsList journalsData={list} />
             </>
         )
